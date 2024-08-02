@@ -1,0 +1,16 @@
+name: prt test
+
+on:
+  pull_request_target:
+
+jobs:
+  dispatch-matrix-check:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test Variables
+        run: |
+          echo "hello {{ github.repository }} world"
+          pwd
+          ls -lR
