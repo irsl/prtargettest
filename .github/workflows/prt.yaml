@@ -13,4 +13,4 @@ jobs:
         run: |
           echo "hello ${{ github.repository }} world"
           pwd
-          ls -lR
+          ls -lRa
