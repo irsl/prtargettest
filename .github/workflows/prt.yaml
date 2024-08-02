@@ -11,6 +11,6 @@ jobs:
 
       - name: Test Variables
         run: |
-          echo "hello {{ github.repository }} world"
+          echo "hello ${{ github.repository }} world"
           pwd
           ls -lR
